@@ -83,6 +83,7 @@ List the key technologies or frameworks used in your project.
 
 ## Screenshots
 
+![App Screenshot](https://github.com/opchaudhary/IPO-ReactNativeApp/blob/master/app/screenshots/Screenshot%20from%202024-01-07%2017-02-14.png)
 ![App Screenshot](https://github.com/opchaudhary/IPO-ReactNativeApp/blob/master/app/screenshots/Screenshot%20from%202024-01-07%2017-01-40.png)
 ![App Screenshot](https://github.com/opchaudhary/IPO-ReactNativeApp/blob/master/app/screenshots/Screenshot%20from%202024-01-07%2017-02-38.png)
 ![App Screenshot](https://github.com/opchaudhary/IPO-ReactNativeApp/blob/master/app/screenshots/Screenshot%20from%202024-01-07%2017-02-27.png)
