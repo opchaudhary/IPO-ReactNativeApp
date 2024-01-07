@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Registration from './app/Registration.js';
+import Login from './app/Login.js';
+import Layout from './app/home/Layout'
+import CurrencyExScreen from './app/home/CurrencyExchange.js';
+import IpoFetcher from './app/Ipo/IpoFetcher.js';
 
-export default function App() {
+
+const Stack = createStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+ 
+    <NavigationContainer>
+       <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name='Home' component={Layout}/>
+        <Stack.Screen name="Exchange" component={CurrencyExScreen}/>
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Registration" component={Registration} />
+        <Stack.Screen name="IPOs" component={IpoFetcher} />
+      </Stack.Navigator>
+    </NavigationContainer>
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  );
+};
+
+export default App;
